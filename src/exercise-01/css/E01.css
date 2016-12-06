@@ -1,0 +1,9 @@
+li.step2 {
+    color: red
+}
+
+.rect-style {
+    stroke: blue;
+    stroke-width: 12px;
+    fill: red;
+}

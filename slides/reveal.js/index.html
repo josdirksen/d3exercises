@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>D3.js in 90 minutes</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/fullscreen-img.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="../img/inferno.png">
+					<h1>Learning D3.js in 90 minutes</h1>
+				</section>
+				<section
+						 data-markdown="../what.md"
+				         data-separator="^\n\n\n"  
+				         data-separator-vertical="^\n\n"  
+				         data-separator-notes="^Note:"  
+			        	 data-charset="iso-8859-15">
+				</section>
+				<section data-background-image="../img/bg2.png">
+					<h1>D3.js Introduction</h1>
+				</section>
+				<section
+						data-markdown="../introduction.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="iso-8859-15">
+				</section>
+				<section data-background-image="../img/bg3.png">
+					<h1>Helloworld of D3.js</h1>
+				</section>
+				<section
+						data-markdown="../helloworld.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="iso-8859-15">
+				</section>
+				<section data-background-image="../img/bg4.png">
+					<h1 style="color: black">Use databinding with D3.js</h1>
+				</section>
+				<section
+						data-markdown="../databinding.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="iso-8859-15">
+				</section>
+				<section data-background-image="../img/bg5.png">
+					<h1 style="color: black">Basic charts and diagrams</h1>
+				</section>
+				<section
+						data-markdown="../charts.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="iso-8859-15">
+				</section>
+				<section data-background-image="../img/bg6.png">
+					<h1 style="color: black">Visualizing tree structures</h1>
+				</section>
+				<section
+						data-markdown="../tree.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="iso-8859-15">
+				</section>
+				<section data-background-image="../img/bg7.png">
+					<h1>Visualizes graphs of data</h1>
+				</section>
+				<section
+						data-markdown="../graph.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="UTF-8">
+				</section>
+				<section data-background-color="white" data-background-video-loop="true" data-background-video="../img/out.mp4">
+					<h1 style="color: black">Gis and Geo data</h1>
+				</section>
+				<section
+						data-markdown="../geo.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="iso-8859-15">
+				</section>
+				<section data-background-image="../img/bg9.png">
+					<h1>D3.js and generative art</h1>
+				</section>
+				<section
+						data-markdown="../voronoi.md"
+						data-separator="^\n\n\n"
+						data-separator-vertical="^\n\n"
+						data-separator-notes="^Note:"
+						data-charset="iso-8859-15">
+				</section>
+				<section data-background-image="../img/rivers.png">
+					<h1 style="color: black">Thank you!</h1>
+				</section>
+			</div>
+
+			<div class='footer'>
+					Get exercises from: http://github.com/josdirksen/d3exercises
+				</div>
+
+			</div>
+		</div>
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'js/fullscreen-img.js' },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

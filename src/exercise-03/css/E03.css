@@ -1,0 +1,25 @@
+.male {
+    fill: steelblue;
+}
+
+.female {
+    fill: hotpink;
+}
+
+.label {
+    fill: black;
+    font: 10px sans-serif;
+    text-anchor: end;
+}
+
+.labels {
+    font-size: smaller;
+}
+
+.lines {
+    stroke: black;
+    stroke-width: 1px;
+    fill: none;
+    opacity: 0.3;
+}
+

@@ -1,0 +1,11 @@
+.link {
+    stroke: black;
+    fill: none;
+    stroke-width: 1;
+}
+
+.node {
+    fill: steelblue;
+    stroke: black;
+    stroke-width: 0.3;
+}
