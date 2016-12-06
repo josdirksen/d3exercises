@@ -41,7 +41,7 @@
 
 ## All follow same approach
 
-1. Load the data from somewhere
+1. Load the data (`d3.csv`,`d3.tsv`,`d3.json` etc.)
 2. Convert the data into a tree stucture
 3. Pass it through a generator
 4. Use the output from the generator to draw the chart 
@@ -66,7 +66,7 @@ var root = stratify(data);
 <img src='../img/stratisfy.png' height=200></img>
 
 
-## Nested data: d3.nest
+## Nested: d3.nest / d3.hierarchy
 
 `d3.nest()` can group data (multiple times) based on a key
 

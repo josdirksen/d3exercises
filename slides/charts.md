@@ -20,7 +20,7 @@ Provides a `g` element for grouping
 <g transform="scale(0.5 0.3)">...</g> <!-- sizing -->
 <g transform="rotate(45)">...</g> <!-- rotate the g -->    
 ``` 
-- These can be combined
+- These actions can be combined
 - But positioning is still difficult
 
 
@@ -58,6 +58,15 @@ color(50); // "#7b5167"
 ```
 
 
+## What can we interpolate?
+
+The domain must be numbers, the range can be any of this:
+ 
+![](../img/what_interpolate.png) 
+
+And if this doesn't match, you can create your own.
+
+
 ##scaleSequential: continuous input to interpolator
 
 ```javascript
@@ -79,13 +88,13 @@ Many interpolators available:
 var min = d3.min(values, function (d) { return d.value; });
 var max = d3.max(values, function (d) { return d.value; });
 // evenly divide the years along the xAxis
-var xScale = d3.scaleLinear()
-        .domain([1984,2014]).range([0, 1080]);
+var xScale = d3.scaleLinear().domain([1984,2014]).range([0, 1080]);
 // evenly divide the values along the yAxis            
 var yScale = d3.scaleLinear()
     .domain([min, max]).range([0, 700]);
 // get a color    
 var col = d3.scaleSequential(d3.interpolatePlasma).domain([0, 100]);
+
 d3.selectAll("rect").data(values).enter()
     .append("rect")
     .attr("x", xScale) // xScale = (d: any) => Numeric 

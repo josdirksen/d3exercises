@@ -15,9 +15,11 @@ and a [data-driven approach]() to DOM manipulation." --- *d3js.org*
 
 
 ## Online information
-  - Lots of online resources, but check the version v4. vs v3.
+  - Lots of online resources, 
+    - Most for v3. current version is v4.
   - API: https://github.com/d3/d3/blob/master/API.md
-    - Bit overwhelming.. until you understand D3.js
+    - Bit overwhelming.. 
+    - But won't be in about 80 minutes
   
     
 ![](../img/d3_api.png)    

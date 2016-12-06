@@ -7,7 +7,7 @@
   - `d3.select` and `d3.selectAll`
     - Uses the W3C selection syntax: uses `querySelector` and `querySelectorAll` 
   - Examples:
-```
+```javascript
    d3.selectAll('p') // Select all p elements in the document.
    d3.select('p') // Select first p element in the document.
 
@@ -21,7 +21,7 @@
 ## We can change the properties off these selections
 
 - `attr()`, `style()`, `html()`, `text()`, `classed()`
-```
+```javascript
     d3.selectAll('img.thumb').attr('height', 50)
     d3.selectAll('span').style('color', 'steelblue')
     d3.selectAll('span').html('<strong>d3.js</strong>')
@@ -31,7 +31,7 @@
 ```
 - Value can also be a function:
 
-```
+```javascript
     // d is bound data, i is the index
     d3.selectAll('img').attr('src', function(d, i) {
         return 'image' + i + '.png';
@@ -42,16 +42,16 @@
 ## Modify the selection
 
 - `append()`: Append child to each element of selection
-```
+```javascript
      d3.selectAll('p').append('span').
 ```
 - `remove()`: Remove all the elements in the selection
-```
+```javascript
     // remove the first li of every lu
     d3.selectAll('ul').select('li').remove()
 ```
 - `insert()`: Insert an element before another element
-```
+```javascript
     // insert a new span as the first element of the p
     d3.selectAll('p').insert('span', ':first-child');
 ```
@@ -79,8 +79,7 @@ $ git clone https://github.com/josdirksen/d3-exercises
 $ python -m SimpleHTTPServer
 ```
 
-If you don't have python, you can use mongoose:
-https://code.google.com/archive/p/mongoose/
+Once again, if you don't have python, you can use mongoose:
 
 - View at http://localhost:8000/src/exercise-01/E01.html
 

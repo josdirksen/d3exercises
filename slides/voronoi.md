@@ -25,7 +25,7 @@
 
 ## any deeper breaks my browser
 
-- This are rendered as SVG elements
+- This is rendered as SVG elements
 - We could output to canvas as well
 
 
